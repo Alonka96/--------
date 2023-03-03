@@ -1,25 +1,12 @@
-table {
-  border: 1px solid grey;
-  border-collapse: collapse;
+* {
+  box-sizing: border-box;
 }
-td {
-  border: 1px solid black;
+body {
+  margin: 0;
+  height: 200px;
 }
-
-thead td {
-  background-color: fuchsia;
-}
-
-tbody tr:nth-child(2n) td:first-child {
-  background-color: lightgreen;
-}
-tbody tr:nth-child(2n + 1) td:first-child {
-  background-color: darkgreen;
-}
-
-tbody tr:nth-child(2n) td {
-  background-color: lightgray;
-}
-tbody tr:nth-child(2n + 1) td {
-  background-color: white;
+.element {
+  position: relative;
+  top: 20px;
+  left: 40px;
 }
