@@ -1,5 +1,6 @@
 table {
   border: 1px solid grey;
+  border-collapse: collapse;
 }
 td {
   border: 1px solid black;
@@ -9,10 +10,16 @@ thead td {
   background-color: fuchsia;
 }
 
-tbody tr:nth-child(even) td {
-  background-color: green;
+tbody tr:nth-child(2n) td:first-child {
+  background-color: lightgreen;
+}
+tbody tr:nth-child(2n + 1) td:first-child {
+  background-color: darkgreen;
 }
 
-tfoot td {
-  background-color: cornflowerblue;
+tbody tr:nth-child(2n) td {
+  background-color: lightgray;
+}
+tbody tr:nth-child(2n + 1) td {
+  background-color: white;
 }
