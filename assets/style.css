@@ -4,67 +4,48 @@
 body {
   margin: 0;
 }
+h1 {
+  color: violet;
+}
+p {
+  color: blue;
+}
 
-.nav-list {
-  font-family: sans-serif;
-  background-color: #f72500;
-  font-size: 0;
+p::first-letter {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: red;
 }
-.nav-list li {
-  list-style-type: none;
-  font-size: 16px;
+
+p::first-line {
+  background-color: aquamarine;
 }
-.link {
-  color: white;
-  text-decoration: none;
+h1::before {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  content: "*";
   display: inline-block;
-  padding: 10px;
 }
-.list-item {
+h1::after {
+  width: 30px;
+  height: 20px;
+  background-color: rgb(27, 24, 59);
+  content: "*";
   display: inline-block;
-  background-color: #f72500;
-  /* padding: 10px; */
-  position: relative;
+  border-radius: 50%;
 }
-.sub-nav-list {
-  display: none;
-  position: absolute;
-  padding: 0;
-  /* width: 100%; */
+ul li {
+  display: inline-block;
+  list-style: none;
 }
-.sub-list-item {
-  background-color: #f72500;
+
+li::before,
+li::after {
+  content: "";
+  height: 5px;
   width: 100%;
-  /* padding: 10px; */
-}
-
-.list-item:hover > .sub-nav-list {
   display: block;
-}
-
-.nav-list li:hover {
-  background-color: #941b00;
-}
-
-.tutorials-nav-list {
-  display: none;
-  position: absolute;
-  padding: 0;
-  width: 100%;
-}
-
-.tutorials-nav-list-item {
-  background-color: #f72500;
-}
-
-.other-nav-list {
-  display: none;
-  position: absolute;
-  padding: 0;
-  width: 100%;
-}
-
-.sub-sub-nav-list {
-  top: 0;
-  left: 100%;
+  background-color: brown;
 }
