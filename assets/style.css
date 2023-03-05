@@ -30,6 +30,7 @@ body {
   display: none;
   position: absolute;
   padding: 0;
+  width: 100%;
 } 
 .sub-list-item {
   background-color: #f72500;
