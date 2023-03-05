@@ -22,16 +22,26 @@
 }
 
 .one {
-  position: relative;
-  right: 100%;
+  background-color: red;
+  position: fixed;
+  right: 10px;
+  top: 10px;
 }
 .two {
+  background-color: grey;
+  position: fixed;
+  left: 10%;
+  top: 10%;
 }
 .three {
+  background-color: blue;
   position: fixed;
-  top: 20px;
-  left: 50%;
-
+  bottom: 10%;
+  right: 10%;
 }
 .four {
+  background-color: blueviolet;
+  position: fixed;
+  bottom: 10%;
+  left: 10%;
 }
