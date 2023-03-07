@@ -4,48 +4,30 @@
 body {
   margin: 0;
 }
-h1 {
-  color: violet;
+.container-1 {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
 }
-p {
-  color: blue;
+.container-2 {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
 }
-
-p::first-letter {
+.container-3 {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly
+}
+.item {
+  width: 50px;
+  height: 50px;
+  background-color: teal;
+  color: white;
   font-size: 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: red;
-}
-
-p::first-line {
-  background-color: aquamarine;
-}
-h1::before {
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  content: "*";
-  display: inline-block;
-}
-h1::after {
-  width: 30px;
-  height: 20px;
-  background-color: rgb(27, 24, 59);
-  content: "*";
-  display: inline-block;
-  border-radius: 50%;
-}
-ul li {
-  display: inline-block;
-  list-style: none;
-}
-
-li::before,
-li::after {
-  content: "";
-  height: 5px;
-  width: 100%;
-  display: block;
-  background-color: brown;
+  text-align: center;
+  border: 1px solid grey;
 }
