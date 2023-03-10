@@ -12,15 +12,38 @@
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
-    <section>
-      <article class="card-container">
-        <div class="container">
-          <p>Weekly Orders</p>
-          <span class="material-symbols-outlined"> bookmark </span>
-        </div>
-        <p class="sum">45,6334</p>
-        <p>Decreased by 10%</p>
-      </article>
-    </section>
+    <label>
+      Type your name
+      <input type="text" name="firstName" placeholder="Name"/>
+    </label>
+    <label>
+      Type your surename
+      <input type="text" name="sureName" placeholder="Surename"/>
+    </label>
+    <label>
+      Type your email
+      <input type="text" name="email" placeholder="name@gmail"/>
+    </label>
+    <label>
+      Choose your birthday
+      <input type="date" name="bday" />
+    </label>
+    <label>
+      Gender <input type="radio" name="gender" value="male" /> Male
+      <input type="radio" name="gender" value="female" /> Female
+      <input type="radio" name="gender" value="nonBinary" /> Non-binary
+    </label>
+    <label>Choose your avatar<input type="file" /></label>
+    <label>
+      <input type="text" list="city" />Choose your city
+      <datalist id="city">
+        <option>Odesa</option>
+        <option>Perevalsk</option>
+      </datalist>
+    </label>
+    <label>
+      Tell us about yorself
+      <textarea rows="10" placeholder="Tell us about yorself"></textarea>
+    </label>
   </body>
 </html>
