@@ -5,52 +5,15 @@
 body {
   margin: 0;
 }
-.card-container {
-  width: 400px;
-  height: 240px;
-  padding: 20px 20px;
-  background: rgb(142, 214, 251);
-  background: linear-gradient(
-    90deg,
-    rgba(142, 214, 251, 1) 0%,
-    rgba(81, 144, 223, 1) 100%
-  );
-  color: white;
-  font-family: sans-serif;
-  position: relative;
-}
-p {
-  font-size: 16px;
-}
-.sum {
-  font-size: 32px;
-  font-weight: 800;
-  margin-top: 10px;
-  margin-bottom: 40px;
-}
-
-.container {
+form {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 25%;
+  margin: 5% auto;
 }
-
-.card-container::after,
-.card-container::before {
-  content: "";
-  display: block;
-  background-color: white;
-  opacity: 0.3;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  position: absolute;
-}
-.card-container::after {
-  top: -33%;
-  right: -20%;
-}
-.card-container::before {
-  top: 40%;
-  right: -5%;
+form input {
+  margin:2% 0 3%;
 }

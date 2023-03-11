@@ -12,38 +12,46 @@
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
-    <label>
-      Type your name
-      <input type="text" name="firstName" placeholder="Name"/>
-    </label>
-    <label>
-      Type your surename
-      <input type="text" name="sureName" placeholder="Surename"/>
-    </label>
-    <label>
-      Type your email
-      <input type="text" name="email" placeholder="name@gmail"/>
-    </label>
-    <label>
-      Choose your birthday
-      <input type="date" name="bday" />
-    </label>
-    <label>
-      Gender <input type="radio" name="gender" value="male" /> Male
-      <input type="radio" name="gender" value="female" /> Female
-      <input type="radio" name="gender" value="nonBinary" /> Non-binary
-    </label>
-    <label>Choose your avatar<input type="file" /></label>
-    <label>
-      <input type="text" list="city" />Choose your city
+    <form>
+      <label for="firstName"> Type your name</label>
+      <input type="text" name="firstName" id="firstName" placeholder="Name" />
+
+      <label for="sureName"> Type your surename</label>
+      <input type="text" name="sureName" id="sureName" placeholder="Surename" />
+
+      <label for="email"> Type your email</label>
+      <input type="text" name="email" id="email" placeholder="name@gmail" />
+
+      <label for="bday"> Choose your birthday</label>
+      <input type="date" name="bday" id="bday" />
+
+      <span> Gender </span>
+      <label for="male"
+        ><input type="radio" name="gender" value="male" id="male" /> Male</label
+      >
+      <label for="female"
+        ><input type="radio" name="gender" value="female" id="female" />
+        Female</label
+      >
+      <label for="nonbinary"
+        ><input type="radio" name="gender" value="nonBinary" id="nonbinary" />
+        Non-binary</label
+      >
+      <label for="avatar">Choose your avatar</label
+      ><input type="file" id="avatar" />
+      <label for="city">Choose your city</label>
+      <input type="text" list="city" />
       <datalist id="city">
         <option>Odesa</option>
         <option>Perevalsk</option>
       </datalist>
-    </label>
-    <label>
-      Tell us about yorself
-      <textarea rows="10" placeholder="Tell us about yorself"></textarea>
-    </label>
+      <label for="yourself"> Tell us about yorself</label>
+      <textarea
+        rows="5"
+        placeholder="Tell us about yorself"
+        id="yourself"></textarea>
+
+      <button>Send</button>
+    </form>
   </body>
 </html>
