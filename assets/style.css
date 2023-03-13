@@ -1,46 +1,79 @@
-* {
-  box-sizing: border-box;
+@import url(./reset.css);
+@font-face {
+  font-family: "Dancing Script";
+  src: url(./fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf)
+    format("truetype");
 }
 
+:root {
+  font-size: 18px;
+}
 body {
-  margin: 0;
-}
-form {
   display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-  padding: 2%;
-  border-radius: 5px;
-  max-width: 25%;
-  margin: 3% auto;
-  background-color: floralwhite;
-  font-family: sans-serif;
+  flex-direction: row;
+  /* height: 800px; */
 }
-form input {
-  margin: 1% 0 3%;
-  height: 2em;
+header {
+  font-size: 20px;
+  flex-basis: 100px;
+  flex-shrink: 0;
+  background-color: wheat;
+  padding: 5%;
 }
 
-label[for*="Name"] {
-  background-color: blue;
+nav ul li {
+  list-style-type: none;
 }
-form input[type="radio"] {
-  height: 1em;
-}
-form label,
-button,
-span {
-  margin-top: 4%;
-  color: darkblue;
-  font-size: 0.8em;
-  font-weight: 700;
-}
-
-section {
+nav ul {
   display: flex;
   flex-direction: column;
-  margin-top: 4%;
+  /* justify-content: space-evenly; */
 }
-section label {
-  margin-top: 0;
+
+nav a {
+  text-decoration: none;
+}
+section.main {
+  display: flex;
+  flex-direction: row;
+}
+
+section.side {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 1.5em;
+  font-weight: 800;
+  margin-bottom: 1em;
+  font-family: "Dancing Script";
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 300px) {
+  body {
+    flex-direction: column;
+  }
+  header {
+    flex-basis: 80px;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  body {
+    background-color: aquamarine;
+    flex-direction: column;
+  }
+  header {
+    flex-basis: 80px;
+  }
+  nav ul {
+    flex-direction: row;
+  }
 }
